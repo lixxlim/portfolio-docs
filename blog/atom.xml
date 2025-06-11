@@ -2,11 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lixxlim.github.io/doc-ssg/blog</id>
     <title>My Site Blog</title>
-    <updated>2021-08-26T00:00:00.000Z</updated>
+    <updated>2025-06-11T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lixxlim.github.io/doc-ssg/blog"/>
     <subtitle>My Site Blog</subtitle>
     <icon>https://lixxlim.github.io/doc-ssg/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Wed Jun 11 2025 00:00:00 GMT+0000 (Coordinated Universal Time)]]></title>
+        <id>https://lixxlim.github.io/doc-ssg/blog/2025-06-11_slug</id>
+        <link href="https://lixxlim.github.io/doc-ssg/blog/2025-06-11_slug"/>
+        <updated>2025-06-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[init test]]></summary>
+        <content type="html"><![CDATA[<p>init test</p>]]></content>
+        <category label="init" term="init"/>
+        <category label="test" term="test"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://lixxlim.github.io/doc-ssg/blog/welcome</id>

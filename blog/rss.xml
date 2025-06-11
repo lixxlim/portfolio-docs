@@ -4,10 +4,20 @@
         <title>My Site Blog</title>
         <link>https://lixxlim.github.io/doc-ssg/blog</link>
         <description>My Site Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Jun 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Wed Jun 11 2025 00:00:00 GMT+0000 (Coordinated Universal Time)]]></title>
+            <link>https://lixxlim.github.io/doc-ssg/blog/2025-06-11_slug</link>
+            <guid>https://lixxlim.github.io/doc-ssg/blog/2025-06-11_slug</guid>
+            <pubDate>Wed, 11 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[init test]]></description>
+            <content:encoded><![CDATA[<p>init test</p>]]></content:encoded>
+            <category>init</category>
+            <category>test</category>
+        </item>
         <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://lixxlim.github.io/doc-ssg/blog/welcome</link>
