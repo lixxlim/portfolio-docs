@@ -10,9 +10,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Portfolio-docs',
+  tagline: '個人プロジェクトのポートフォリオを貯めておくサイト',
+  favicon: 'img/lixlim_logo_mini.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -23,12 +23,12 @@ const config = {
   url: 'https://lixxlim.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/doc-ssg/',
+  baseUrl: '/portfolio-docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'lixlim', // Usually your GitHub org/user name.
+  projectName: 'portfolio-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -37,8 +37,8 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'jp',
+    locales: ['jp'],
   },
 
   presets: [
@@ -61,8 +61,8 @@ const config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -79,72 +79,150 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/lixlim_logo.png',
       navbar: {
-        title: 'My Site',
+        title: 'portfolio-docs',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Logo',
+          src: 'img/lixlim_logo_mini.ico',
         },
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'portfolioSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Portfolio',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // {
+          //   href: 'https://github.com/lixxlim',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
         style: 'dark',
         links: [
+          // {
+          //   title: 'Frontendプロジェクト',
+          //   items: [
+          //     {
+          //       label: 'ECサイト (React)',
+          //       to: '/docs/intro',
+          //     },
+          //     {
+          //       label: 'スレッド式掲示板 (React)',
+          //       to: '/docs/intro',
+          //     },
+          //     {
+          //       label: '社内向け告知掲示板 (React/Bootstrap5)',
+          //       to: '/docs/intro',
+          //     },
+          //     {
+          //       label: 'レシピー共有サイト (React)',
+          //       to: '/docs/intro',
+          //     },
+          //     {
+          //       label: 'ホテル予約サイト (React)',
+          //       to: '/docs/intro',
+          //     },
+          //     {
+          //       label: 'コーポレートサイト (React)',
+          //       to: '/docs/intro',
+          //     },
+          //     {
+          //       label: 'モバイルオーダーシステム (React)',
+          //       to: '/docs/intro',
+          //     },
+          //   ],
+          // },
+          // {
+          //   title: 'Backendプロジェクト',
+          //   items: [
+          //     {
+          //       label: 'REST API (with SpringBoot)',
+          //       to: '/docs/intro',
+          //     },
+          //     {
+          //       label: 'REST API (with Node.js)',
+          //       to: '/docs/intro',
+          //     },
+          //     {
+          //       label: 'REST API (with Django)',
+          //       to: '/docs/intro',
+          //     },
+          //     {
+          //       label: 'REST API (with Gin)',
+          //       to: '/docs/intro',
+          //     },
+          //     {
+          //       label: 'GraphQL API (with SpringBoot)',
+          //       to: '/docs/intro',
+          //     },
+          //     {
+          //       label: 'gRPC (with SpringBoot)',
+          //       to: '/docs/intro',
+          //     },
+          //     {
+          //       label: 'Batch (with SpringBatch)',
+          //       to: '/docs/intro',
+          //     },
+          //   ],
+          // },
+          // {
+          //   title: 'Desktopアプリケーション',
+          //   items: [
+          //     {
+          //       label: 'ERP (with C#/Winforms)',
+          //       to: '/docs/intro',
+          //     },
+          //     {
+          //       label: 'バックオフィス (with C#/WPF)',
+          //       to: '/docs/intro',
+          //     },
+          //   ],
+          // },
+          // {
+          //   title: 'その他ツール',
+          //   items: [
+          //     {
+          //       label: 'Liquibase TUI Tool (with Batch File)',
+          //       to: '/docs/intro',
+          //     },
+          //     {
+          //       label: 'Gemini TUI Tool (with Bash Script)',
+          //       to: '/docs/intro',
+          //     },
+          //   ],
+          // },
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
+            title: 'SNSなど',
             items: [
               {
                 label: 'Blog',
                 to: '/blog',
               },
               {
+                label: 'Profile.lixlim.com',
+                href: 'https://profile.lixlim.com',
+              },
+              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/lixxlim',
+              },
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/eunchong-lim-927b9426a',
+              },
+              {
+                label: 'CodePen',
+                href: 'https://codepen.io/collection/MWamGO',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} EUNCHONG LIM.`,
       },
       prism: {
         theme: prismThemes.github,
