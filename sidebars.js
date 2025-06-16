@@ -20,21 +20,20 @@ const sidebars = {
 
   // But you can create a sidebar manually
   portfolioSidebar: [
-    'ポートフォリオ概要',
+    '000-1',
     {
       type: 'category',
       label: 'Java SpringBoot',
       items: [
         // 'tutorial-basics/create-a-document',
-        'intro',
-        'test',
+        'spring/001-intro',
       ],
     },
    {
       type: 'category',
       label: 'React',
       items: [
-        'test'
+        'react/001-intro'
       ],
     },
   ],
