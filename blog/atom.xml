@@ -9,8 +9,8 @@
     <icon>https://lixxlim.github.io/portfolio-docs/img/lixlim_logo_mini.ico</icon>
     <entry>
         <title type="html"><![CDATA[Docusaurusサイト開設]]></title>
-        <id>https://lixxlim.github.io/portfolio-docs/blog/2025/06/11/title</id>
-        <link href="https://lixxlim.github.io/portfolio-docs/blog/2025/06/11/title"/>
+        <id>https://lixxlim.github.io/portfolio-docs/blog/2025-06-11-1</id>
+        <link href="https://lixxlim.github.io/portfolio-docs/blog/2025-06-11-1"/>
         <updated>2025-06-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[ポートフォリオ資料を載せるための、SSG(with Docusaurus)サイト作成中・・・]]></summary>
         <content type="html"><![CDATA[<p>ポートフォリオ資料を載せるための、SSG(with Docusaurus)サイト作成中・・・</p>]]></content>

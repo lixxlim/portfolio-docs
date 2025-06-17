@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Docusaurus\u30b5\u30a4\u30c8\u958b\u8a2d","permalink":"/portfolio-docs/blog/2025/06/11/title","unlisted":false,"date":"2025-06-11T00:00:00.000Z"}]}')}}]);
