@@ -2,11 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lixxlim.github.io/portfolio-docs/blog</id>
     <title>Portfolio-docs Blog</title>
-    <updated>2025-06-11T00:00:00.000Z</updated>
+    <updated>2025-07-03T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lixxlim.github.io/portfolio-docs/blog"/>
     <subtitle>Portfolio-docs Blog</subtitle>
     <icon>https://lixxlim.github.io/portfolio-docs/img/lixlim_logo_mini.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Pythonスクリプトをexeファイルにしようとした話]]></title>
+        <id>https://lixxlim.github.io/portfolio-docs/blog/2025-07-03-1</id>
+        <link href="https://lixxlim.github.io/portfolio-docs/blog/2025-07-03-1"/>
+        <updated>2025-07-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[基本的に仕事中に、自動化ができそうな作業があると、必ずスクリプトなどを使って自動化または半自動化をするようにしている。]]></summary>
+        <content type="html"><![CDATA[<p>基本的に仕事中に、自動化ができそうな作業があると、必ずスクリプトなどを使って自動化または半自動化をするようにしている。
+そして、同僚たちが使うことを想定し、できる限りワンクリックで実行可能な状態にするのが正解だと信じている。
+そのため、windows環境の場合はできる限りbatファイルで作成する。
+powershellはより便利ではあるが、セキュリティ上の制約があって、気軽には使えない。
+(そのため、batファイルの中からpowershellスクリプトを呼び出すという方法を使う場合もある)
+そして、Linux環境上のツールが必要だった場合はbashのシェルスクリプトを使うようにしている。</p>
+<p>そして、今回、aws関連のツールを作成したので、awsのsdkを使うために、pythonのスクリプトを作成することになった。
+作成したはいいものの、問題が一つある。
+これは僕一人が使うものではなく、今後他の人も使うことが想定されているものなので、できる限り簡単な使い方ができるようにしたい。
+その場合、pythonスクリプトのままでpythonコマンドで実行するのは少し面倒だ。
+だって依存性などもpipでインストールする必要があるし・・・</p>
+<p>そこで思いついたのは、pyinstallerやnuitkaなどを使い、pythonスクリプトをexeファイルにして使わせればより簡単な使い方になるかな、と。
+ここでpyinstallerには大きな問題があった。
+過去の経験から、pyinstallerで作ったexeファイルは、実行されるまでとても長く待たされる、ということ。
+これはおそらくだが、パソコンのセキュリティソフトがこのexeファイルを検査するのに時間がかかるのだと思われる。
+問題は毎回実行するたびに時間がかかるので、何分もかかるので、使い物にはならないということ。</p>
+<p>それで、nuitkaのような、pythonコードをC++コードに変換してコンパイルした場合はどうなのか気になったので挑戦してみた。</p>
+<p>ここで発覚したnuitkaの難点。</p>
+<ul>
+<li>python 3.13バージョンにまだちゃんと対応できていない。</li>
+<li>C++のコンパイラが別途必要になる。</li>
+<li>クロスフラットフォームに対応しておらず、wsl上で作成するとLinux専用になってしまう。
+など・・・</li>
+</ul>
+<p>これじゃnuitkaも難しそう・・・。
+明日もうちょい方法を探ってみよう。</p>]]></content>
+        <category label="python" term="python"/>
+        <category label="pyinstaller" term="pyinstaller"/>
+        <category label="nuitka" term="nuitka"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Docusaurusサイト開設]]></title>
         <id>https://lixxlim.github.io/portfolio-docs/blog/2025-06-11-1</id>
