@@ -4,32 +4,33 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: '成長意欲の高さ',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        IT業界に入ってから毎日少しずつ学習を続けており、UdemyやKindleでの学習、個人サーバーでの実践などを通じてスキルを磨いています。
+        資格勉強にも力を入れており、現在は情報処理安全確保支援士試験の合格を目指して取り組んでいます。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: '自走力と挑戦心',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        指導がなくても主体的に動ける力があります。
+        引継ぎが不十分な環境下でも業務を遂行し、新しい技術（例：JMeterやLiquibase）にも積極的に挑戦して成果を出してきました。
+        実務で得た知見はドキュメント化して社内共有も行っています。
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: '高いコミュニケーション力',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        チームメンバーとのこまめな情報共有や、自分のタスク以外にも関心を持って問題解決に貢献しています。
+        リーダーとのやり取りでは選択肢を提示するなど、相手の判断を助ける工夫を意識しています。
       </>
     ),
   },
