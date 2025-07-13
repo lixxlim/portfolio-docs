@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lixxlim.github.io/portfolio-docs/blog"/>
     <subtitle>Portfolio-docs Blog</subtitle>
-    <icon>https://lixxlim.github.io/portfolio-docs/img/lixlim_logo_mini.ico</icon>
+    <icon>https://lixxlim.github.io/portfolio-docs/img/lixlim_logo_white.png</icon>
     <entry>
         <title type="html"><![CDATA[Pythonスクリプトをexeファイルにしようとした話]]></title>
         <id>https://lixxlim.github.io/portfolio-docs/blog/2025-07-03-1</id>
@@ -14,8 +14,8 @@
         <updated>2025-07-03T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[基本的に仕事中に、自動化ができそうな作業があると、必ずスクリプトなどを使って自動化または半自動化をするようにしている。]]></summary>
         <content type="html"><![CDATA[<p>基本的に仕事中に、自動化ができそうな作業があると、必ずスクリプトなどを使って自動化または半自動化をするようにしている。
-そして、同僚たちが使うことを想定し、できる限りワンクリックで実行可能な状態にするのが正解だと信じている。
-そのため、windows環境の場合はできる限りbatファイルで作成する。
+そして、同僚たちが使うことを想定し、できる限りワンクリックで実行可能な状態にするのが正解だと信じている。</p>
+<p>そのため、windows環境の場合はできる限りbatファイルで作成する。
 powershellはより便利ではあるが、セキュリティ上の制約があって、気軽には使えない。
 (そのため、batファイルの中からpowershellスクリプトを呼び出すという方法を使う場合もある)
 そして、Linux環境上のツールが必要だった場合はbashのシェルスクリプトを使うようにしている。</p>
