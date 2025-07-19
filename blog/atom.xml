@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://lixxlim.github.io/portfolio-docs/blog</id>
+    <id>https://portfolio.lixlim.com/blog</id>
     <title>Portfolio-docs Blog</title>
     <updated>2025-07-03T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://lixxlim.github.io/portfolio-docs/blog"/>
+    <link rel="alternate" href="https://portfolio.lixlim.com/blog"/>
     <subtitle>Portfolio-docs Blog</subtitle>
-    <icon>https://lixxlim.github.io/portfolio-docs/img/lixlim_logo_white.png</icon>
+    <icon>https://portfolio.lixlim.com/img/lixlim_logo_white.png</icon>
     <entry>
         <title type="html"><![CDATA[Pythonスクリプトをexeファイルにしようとした話]]></title>
-        <id>https://lixxlim.github.io/portfolio-docs/blog/2025-07-03-1</id>
-        <link href="https://lixxlim.github.io/portfolio-docs/blog/2025-07-03-1"/>
+        <id>https://portfolio.lixlim.com/blog/2025-07-03-1</id>
+        <link href="https://portfolio.lixlim.com/blog/2025-07-03-1"/>
         <updated>2025-07-03T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[基本的に仕事中に、自動化ができそうな作業があると、必ずスクリプトなどを使って自動化または半自動化をするようにしている。]]></summary>
         <content type="html"><![CDATA[<p>基本的に仕事中に、自動化ができそうな作業があると、必ずスクリプトなどを使って自動化または半自動化をするようにしている。
@@ -45,8 +45,8 @@ powershellはより便利ではあるが、セキュリティ上の制約があ�
     </entry>
     <entry>
         <title type="html"><![CDATA[Docusaurusサイト開設]]></title>
-        <id>https://lixxlim.github.io/portfolio-docs/blog/2025-06-11-1</id>
-        <link href="https://lixxlim.github.io/portfolio-docs/blog/2025-06-11-1"/>
+        <id>https://portfolio.lixlim.com/blog/2025-06-11-1</id>
+        <link href="https://portfolio.lixlim.com/blog/2025-06-11-1"/>
         <updated>2025-06-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[ポートフォリオ資料を載せるための、SSG(with Docusaurus)サイト作成中・・・]]></summary>
         <content type="html"><![CDATA[<p>ポートフォリオ資料を載せるための、SSG(with Docusaurus)サイト作成中・・・</p>]]></content>

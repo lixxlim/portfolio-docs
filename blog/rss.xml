@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Portfolio-docs Blog</title>
-        <link>https://lixxlim.github.io/portfolio-docs/blog</link>
+        <link>https://portfolio.lixlim.com/blog</link>
         <description>Portfolio-docs Blog</description>
         <lastBuildDate>Thu, 03 Jul 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>jp</language>
         <item>
             <title><![CDATA[Pythonスクリプトをexeファイルにしようとした話]]></title>
-            <link>https://lixxlim.github.io/portfolio-docs/blog/2025-07-03-1</link>
-            <guid>https://lixxlim.github.io/portfolio-docs/blog/2025-07-03-1</guid>
+            <link>https://portfolio.lixlim.com/blog/2025-07-03-1</link>
+            <guid>https://portfolio.lixlim.com/blog/2025-07-03-1</guid>
             <pubDate>Thu, 03 Jul 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[基本的に仕事中に、自動化ができそうな作業があると、必ずスクリプトなどを使って自動化または半自動化をするようにしている。]]></description>
             <content:encoded><![CDATA[<p>基本的に仕事中に、自動化ができそうな作業があると、必ずスクリプトなどを使って自動化または半自動化をするようにしている。
@@ -46,8 +46,8 @@ powershellはより便利ではあるが、セキュリティ上の制約があ�
         </item>
         <item>
             <title><![CDATA[Docusaurusサイト開設]]></title>
-            <link>https://lixxlim.github.io/portfolio-docs/blog/2025-06-11-1</link>
-            <guid>https://lixxlim.github.io/portfolio-docs/blog/2025-06-11-1</guid>
+            <link>https://portfolio.lixlim.com/blog/2025-06-11-1</link>
+            <guid>https://portfolio.lixlim.com/blog/2025-06-11-1</guid>
             <pubDate>Wed, 11 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[ポートフォリオ資料を載せるための、SSG(with Docusaurus)サイト作成中・・・]]></description>
             <content:encoded><![CDATA[<p>ポートフォリオ資料を載せるための、SSG(with Docusaurus)サイト作成中・・・</p>]]></content:encoded>
