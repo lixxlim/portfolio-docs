@@ -41,11 +41,11 @@ jobs:
         run: |
           curl -X POST -H 'Content-type: application/json' \
           --data '{
-            "text": ":rocket: Docusaurus 사이트가 성공적으로 배포되었습니다.\n<https://your-site-url.com|사이트 바로가기>",
+            "text": ":rocket: Docusaurus 사이트가 성공적으로 배포되었습니다.\n<https://portfolio.lixlim.com|사이트 바로가기>",
             "username": "Docusaurus Bot",
             "icon_emoji": ":docusaurus:"
           }' ${{ secrets.SLACK_WEBHOOK_URL }}
-          
+
       - name: Notify Slack on failure
         if: failure()
         run: |
