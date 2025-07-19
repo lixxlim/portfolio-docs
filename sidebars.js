@@ -1,3 +1,6 @@
+const siteConfig = require('./docusaurus.config.js');
+const baseUrl = siteConfig.baseUrl;
+
 const sidebars = {
   portfolioSidebar: [
     '000-1_ポートフォリオ概要',
@@ -6,7 +9,7 @@ const sidebars = {
       type: 'category',
       label: 'Java',
       customProps: {
-        iconPath: '/img/icons/java.svg',
+        iconPath: `${baseUrl}img/icons/java.svg`,
       },
       items: [
         {
@@ -37,7 +40,7 @@ const sidebars = {
       type: 'category',
       label: 'Kotlin',
       customProps: {
-        iconPath: '/img/icons/kotlin.svg',
+        iconPath: `${baseUrl}img/icons/kotlin.svg`,
       },
       items: [
         {
@@ -61,7 +64,7 @@ const sidebars = {
       type: 'category',
       label: 'Python',
       customProps: {
-        iconPath: '/img/icons/python.svg',
+        iconPath: `${baseUrl}img/icons/python.svg`,
       },
       items: [
         {
@@ -99,7 +102,7 @@ const sidebars = {
       type: 'category',
       label: 'Javascript',
       customProps: {
-        iconPath: '/img/icons/javascript.svg',
+        iconPath: `${baseUrl}img/icons/javascript.svg`,
       },
       items: [
         {

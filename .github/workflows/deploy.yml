@@ -35,3 +35,23 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
           publish_branch: gh-pages
+
+      - name: Notify Slack on success
+        if: success()
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+          --data '{
+            "text": ":rocket: Docusaurus 사이트가 성공적으로 배포되었습니다.\n<https://your-site-url.com|사이트 바로가기>",
+            "username": "Docusaurus Bot",
+            "icon_emoji": ":docusaurus:"
+          }' ${{ secrets.SLACK_WEBHOOK_URL }}
+          
+      - name: Notify Slack on failure
+        if: failure()
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+          --data '{
+            "text": ":x: Docusaurus 배포가 **실패**했습니다.\n<https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}|로그 보기>",
+            "username": "Docusaurus Bot",
+            "icon_emoji": ":warning:"
+          }' ${{ secrets.SLACK_WEBHOOK_URL }}
