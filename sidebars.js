@@ -6,7 +6,7 @@ const sidebars = {
       type: 'category',
       label: 'Java',
       customProps: {
-        iconPath: '/portfolio-docs/img/icons/java.svg',
+        iconPath: '/img/icons/java.svg',
       },
       items: [
         {
@@ -37,7 +37,7 @@ const sidebars = {
       type: 'category',
       label: 'Kotlin',
       customProps: {
-        iconPath: '/portfolio-docs/img/icons/kotlin.svg',
+        iconPath: '/img/icons/kotlin.svg',
       },
       items: [
         {
@@ -61,7 +61,7 @@ const sidebars = {
       type: 'category',
       label: 'Python',
       customProps: {
-        iconPath: '/portfolio-docs/img/icons/python.svg',
+        iconPath: '/img/icons/python.svg',
       },
       items: [
         {
@@ -99,7 +99,7 @@ const sidebars = {
       type: 'category',
       label: 'Javascript',
       customProps: {
-        iconPath: '/portfolio-docs/img/icons/javascript.svg',
+        iconPath: '/img/icons/javascript.svg',
       },
       items: [
         {
