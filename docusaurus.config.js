@@ -10,8 +10,8 @@ const config = {
     v4: true,
   },
 
-  url: 'https://lixxlim.github.io',
-  baseUrl: '/portfolio-docs/',
+  url: 'https://portfolio.lixlim.com',
+  baseUrl: '/',
   organizationName: 'lixlim',
   projectName: 'portfolio-docs',
 
