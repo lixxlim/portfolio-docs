@@ -4,10 +4,30 @@
         <title>Portfolio-docs Blog</title>
         <link>https://portfolio.lixlim.com/blog</link>
         <description>Portfolio-docs Blog</description>
-        <lastBuildDate>Thu, 03 Jul 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 09 Aug 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>jp</language>
+        <item>
+            <title><![CDATA[WindowsとLinuxのファイルシステムの違いでエラーに遭遇した話]]></title>
+            <link>https://portfolio.lixlim.com/blog/2025-08-09-1</link>
+            <guid>https://portfolio.lixlim.com/blog/2025-08-09-1</guid>
+            <pubDate>Sat, 09 Aug 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Java Spring Batchの動作で、入力されたファイルを5つに分けて処理を行い、保存した5つのファイルをFiles.walkで読み取りをして一つのファイルにまとめるというメソッドがあった。しかし、これがいざ本番反映前のテストではファイルが想定順番ではなく、ランダムで順番が入れ替わるという現象が起こり、これの改修の依頼が僕に来た。]]></description>
+            <content:encoded><![CDATA[<p>Java Spring Batchの動作で、入力されたファイルを5つに分けて処理を行い、保存した5つのファイルをFiles.walkで読み取りをして一つのファイルにまとめるというメソッドがあった。しかし、これがいざ本番反映前のテストではファイルが想定順番ではなく、ランダムで順番が入れ替わるという現象が起こり、これの改修の依頼が僕に来た。</p>
+<p>既存処理で、Files.walkをsortしていたので、最初はファイルの順番に問題があると思えず、そしてデグレを最小限にするという前提条件があったので、開発リーダーから提案された解決策は、まずバッチ処理にてファイルの読み込みをする際に書く行に番号をつけておき、最終段階で結果ファイルが出力されたら、そのファイルを再度読み込み、あらかじめつけておいた番号順にソートを行い、最終歩アイルを上書きする、という方法だった。既存処理はそのままなので、デグレの影響が一番少ない方法だったけど、ファイルのサイズも大きいので、製造後にパフォーマンスが悪くなっていないかを確認するまでが依頼の内容だった。</p>
+<p>ここで僕は、まず実際どの理由で入れ替わりが発生するのかを見るために、バッチ処理話回してみた。その結果は、「あれ?順番通りに出力されるけど?」ということになってて、変だな・・・と思いましがらリーダーに相談をした。リーダーさんの意見は、「再現できないのは気持ち悪いけど、まず依頼した通りにソートを入れておけば、原因が分からなくても解決はできる」という内容だった。
+それで、僕はまずローカル上でソートを実装し、検証環境でのテストを実施した。
+検証環境での実施の際に、念の為、古いソースでテストを行なったけど、なんと、順番が入れ替わる現象が再現され、急いて報告をし、その原因を探った。</p>
+<p>結論から言うと、ローカル環境はWindowsで、ファイルシステムはNTFS、ファイルインデックスはMFTを使っていて、これの場合、ファイルが生成された順とほぼ同じ順番にFiles.walkで読み込まれるらしい。これでローカルのテストでは毎回同じファイル順番で読み込まれるので再現ができなかった。
+一方で、検証環境はLinuxで、ファイルシステムはext4、ファイルインデックスはinode/Htreeを使っていて、これの場合、ハッシュを用いてインデックスを作るので、ほぼランダム順にFiles.walkで読み込まれるということ。</p>
+<p>ここまで原因がわかったらもう解決は簡単。既存のFiles.walkのsortに問題があることが特定できたので、これを改修して作業を完了した。
+という話。</p>]]></content:encoded>
+            <category>windows</category>
+            <category>linux</category>
+            <category>MFT</category>
+            <category>Htree</category>
+        </item>
         <item>
             <title><![CDATA[Pythonスクリプトをexeファイルにしようとした話]]></title>
             <link>https://portfolio.lixlim.com/blog/2025-07-03-1</link>
